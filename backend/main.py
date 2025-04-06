@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# 👇 Allow cross-origin requests (important for frontend access)
+#Allow cross-origin requests for frontend access
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -14,6 +14,6 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return{"message": "Welcome to Materialslab API"}
+    return{"message": "Welcome to Materialslab Inc."}
 
 
